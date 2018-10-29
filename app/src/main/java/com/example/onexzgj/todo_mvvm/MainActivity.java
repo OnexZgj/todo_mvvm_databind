@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         mStudent = new Student("Onex", "23");
 
-        mBinding.setVariable(BR.Student, mStudent);
-        mBinding.setVariable(BR.presenter, new Presenter());
+        mBinding.setVariable(com.example.onexzgj.todo_mvvm.BR.Student, mStudent);
+        mBinding.setVariable(com.example.onexzgj.todo_mvvm.BR.presenter, new Presenter());
 
     }
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
             mStudent.setName(text.toString());
-            mBinding.setVariable(BR.Student, mStudent);
+            mBinding.setVariable(com.example.onexzgj.todo_mvvm.BR.Student, mStudent);
         }
 
 
@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClickToExpression(View view){
             startActivity(new Intent(MainActivity.this,ExpressionActivity.class));
 
+        }
+
+        public void onClickToTwoWay(View view){
+            startActivity(new Intent(MainActivity.this,TwoWayActivity.class));
         }
 
 

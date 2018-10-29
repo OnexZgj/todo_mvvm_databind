@@ -19,7 +19,6 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             app:placeholder="@{@drawable/default_avatar}"
-
             app:imageUrl="@{employee.mAvatar}" />
 
     </LinearLayout>

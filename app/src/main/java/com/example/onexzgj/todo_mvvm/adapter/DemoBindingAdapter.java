@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 
 public class DemoBindingAdapter  {
 
-    @BindingAdapter({"app:imageUrl","app:placeholder"})
+    @BindingAdapter({"imageUrl","placeholder"})
     public static void LoadImageFromUrl(ImageView imageView, String url, Drawable placeholder){
         Glide.with(imageView.getContext())
                 .load(url)

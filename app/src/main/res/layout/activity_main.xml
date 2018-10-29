@@ -94,6 +94,15 @@
             android:text="list Activity" />
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:onClick="@{presenter::onClickToTwoWay}"
+            android:text="Two Way Activity" />
+
+
 
         <Button
             android:id="@+id/btn_change"

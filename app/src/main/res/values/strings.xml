@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">todo-mvvm</string>
+    <string name="welcome">welcome</string>
 </resources>
