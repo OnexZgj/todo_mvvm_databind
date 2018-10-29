@@ -30,7 +30,7 @@
             android:textSize="16sp"
             android:background="@color/colorPrimary"
             android:text="测试onclick"
-            android:onClick="@{presenter.onClick}"
+            android:onClick="@{presenter::onClick}"
             android:textColor="#ffffff"/>
 
 
@@ -55,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="请输入name："
-            android:onTextChanged="@{presenter.onTextChanged}" />
+            android:onTextChanged="@{presenter::onTextChanged}" />
 
 
         <TextView
@@ -65,7 +65,7 @@
             android:background="#dd0099"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:onClick="@{presenter.onClick2}"
+            android:onClick="@{presenter::onClick2}"
             android:text="跳转ObservableActivity"/>
 
         <TextView
@@ -81,7 +81,7 @@
             android:layout_height="48dp"
             android:layout_margin="5dp"
             android:background="@color/colorPrimary"
-            android:onClick="@{presenter.onClick}"
+            android:onClick="@{presenter::onClick}"
             android:text="@{Student.age}" />
 
 
@@ -90,7 +90,7 @@
             android:layout_height="48dp"
             android:layout_margin="5dp"
             android:background="@color/colorPrimary"
-            android:onClick="@{presenter.toListActivity}"
+            android:onClick="@{presenter::toListActivity}"
             android:text="list Activity" />
 
 
@@ -99,7 +99,15 @@
             android:id="@+id/btn_change"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="change" />
+            android:text="跳转到自定义bindAdapter"
+            android:onClick="@{presenter::onClickToExpression}"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>

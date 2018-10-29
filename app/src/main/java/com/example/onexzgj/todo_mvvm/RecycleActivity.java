@@ -32,6 +32,7 @@ public class RecycleActivity extends AppCompatActivity {
         demoList.add(new Students("Zhai", "Mark", false));
         demoList.add(new Students("Zhai2", "Mark2", false));
         demoList.add(new Students("Zhai3", "Mark3", true));
+        demoList.add(new Students("张", "Mark8", true));
         demoList.add(new Students("Zhai4", "Mark4", false));
 
 

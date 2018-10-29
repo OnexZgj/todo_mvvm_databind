@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="employee"
+            type="com.example.onexzgj.todo_mvvm.bean.Employee" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.onexzgj.todo_mvvm.ExpressionActivity">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:placeholder="@{@drawable/default_avatar}"
+
+            app:imageUrl="@{employee.mAvatar}" />
+
+    </LinearLayout>
+</layout>
