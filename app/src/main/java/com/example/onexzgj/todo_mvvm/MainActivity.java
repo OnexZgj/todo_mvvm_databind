@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, RecycleActivity.class));
         }
 
+        public void toAnimationActivity(View view) {
+            startActivity(new Intent(MainActivity.this, AnimationActivity.class));
+        }
+
 
         public void onClickListenerBinding(Student student) {
             Toast.makeText(MainActivity.this, student.name, Toast.LENGTH_SHORT).show();

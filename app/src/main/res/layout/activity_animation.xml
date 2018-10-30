@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="presenter"
+            type="com.example.onexzgj.todo_mvvm.AnimationActivity.Presenter"/>
+
+
+        <variable
+            name="employee"
+            type="com.example.onexzgj.todo_mvvm.bean.Employee" />
+
+        <variable
+            name="showImage"
+            type="boolean"/>
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_avatar"
+            app:placeholder="@{@drawable/default_avatar}"
+            app:imageUrl="@{employee.mAvatar}"
+            android:visibility="@{showImage ? View.VISIBLE : View.GONE}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onCheckedChanged="@{presenter.onCheckedChanged}"
+            android:text="显示照片"/>
+    </LinearLayout>
+</layout>

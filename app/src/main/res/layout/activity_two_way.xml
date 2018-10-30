@@ -18,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center_vertical"
-            android:inputType="textNoSuggestions"
             android:text="@={modle.mName}"/>
 
 
@@ -26,14 +25,14 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center_vertical"
-            android:inputType="textPassword"
             android:text="@={modle.mPassWord}"/>
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@={modle.mName}"/>
+            android:text="@{modle.mName}"
+            />
 
 
     </LinearLayout>

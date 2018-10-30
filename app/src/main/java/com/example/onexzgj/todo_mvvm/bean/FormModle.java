@@ -12,17 +12,23 @@ import com.example.onexzgj.todo_mvvm.BR;
 public class FormModle extends BaseObservable {
 
     public String mName;
+
+
+
     public String mPassWord;
 
     public FormModle(String name, String password) {
         this.mName = name;
         this.mPassWord = password;
+        notifyChange();
     }
-
-
     @Bindable
     public String getmName() {
         return mName;
+    }
+    @Bindable
+    public String getmPassWord() {
+        return mPassWord;
     }
 
     public void setmName(String name) {
@@ -30,10 +36,6 @@ public class FormModle extends BaseObservable {
         notifyPropertyChanged(BR.mName);
     }
 
-    @Bindable
-    public String getmPassWord() {
-        return mPassWord;
-    }
 
     public void setmPassWord(String passWord) {
         this.mPassWord = passWord;

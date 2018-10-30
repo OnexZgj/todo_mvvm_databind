@@ -21,5 +21,11 @@ public class TwoWayActivity extends AppCompatActivity {
         FormModle modle1=new FormModle("OneX","123456");
         ViewDataBinding dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_two_way);
         dataBinding.setVariable(BR.modle,modle1);
+//        modle1.addOnPropertyChangedCallback(new Observable.OnPropertyChangedCallback() {
+//            @Override
+//            public void onPropertyChanged(Observable sender, int propertyId) {
+//                Toast.makeText(TwoWayActivity.this, String.valueOf(propertyId), Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 }

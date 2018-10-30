@@ -23,7 +23,8 @@
         <activity android:name=".ObservableActivity" />
         <activity android:name=".RecycleActivity" />
         <activity android:name=".ExpressionActivity" />
-        <activity android:name=".TwoWayActivity"></activity>
+        <activity android:name=".TwoWayActivity" />
+        <activity android:name=".AnimationActivity"></activity>
     </application>
 
 </manifest>
